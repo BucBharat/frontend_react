@@ -2,31 +2,24 @@
   "users": [
     {
       "name": "bharat",
-      "username": "fit",
+      "username": "fit12",
       "email": "bharat.buchupalle1234@gmail.com",
       "phone": "1234567890",
       "id": 0
     },
     {
-      "name": "bharat reddy",
-      "username": "norway",
-      "phone": "12345654321",
-      "email": "bharat.buchupalle1@gmail.com",
+      "name": "bharat1",
+      "username": "bharat1",
+      "phone": "123432111",
+      "email": "bharat1@gmail.com",
       "id": 1
     },
     {
-      "name": "Soma",
-      "username": "haha",
-      "phone": "1234432123",
-      "email": "soma@gmail.com",
+      "name": "bharat2",
+      "username": "bharat2",
+      "phone": "123432111",
+      "email": "bharat2@gmail.com",
       "id": 2
-    },
-    {
-      "name": "Just chilling",
-      "username": "chill",
-      "phone": "1234432111",
-      "email": "chill@gmail.com",
-      "id": 3
     }
   ]
 }

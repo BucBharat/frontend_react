@@ -5,6 +5,7 @@ import AddUser from './components/AddUser';
 import NotFound from './components/NotFound';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.css';
+import EditUser from './components/EditUser';
 
 function App() {
   return (
@@ -16,6 +17,9 @@ function App() {
           {' '}
         </Route>
         <Route exact={true} path="/add" element={<AddUser />}>
+          {' '}
+        </Route>
+        <Route exact path="/edit/:id" element={<EditUser />}>
           {' '}
         </Route>
         <Route path="*" element={<NotFound />}>
