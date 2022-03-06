@@ -1,25 +1,11 @@
 {
   "users": [
     {
-      "name": "bharat",
-      "username": "fit12",
-      "email": "bharat.buchupalle1234@gmail.com",
-      "phone": "1234567890",
-      "id": 0
-    },
-    {
       "name": "bharat1",
       "username": "bharat1",
       "phone": "123432111",
       "email": "bharat1@gmail.com",
       "id": 1
-    },
-    {
-      "name": "bharat2",
-      "username": "bharat2",
-      "phone": "123432111",
-      "email": "bharat2@gmail.com",
-      "id": 2
     }
   ]
 }

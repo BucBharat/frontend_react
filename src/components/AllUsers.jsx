@@ -8,7 +8,7 @@ import {
   Button,
 } from '@material-ui/core';
 import { useEffect, useState } from 'react';
-import { getUsers } from '../Service/api';
+import { getUsers, deleteUser } from '../Service/api';
 import { Link } from 'react-router-dom';
 
 const useStyle = makeStyles({
@@ -32,6 +32,10 @@ const useStyle = makeStyles({
 const AllUsers = () => {
   const [users, setUsers] = useState([]);
   const classes = useStyle();
+  const deleteUserData = async id => {
+    await deleteUser(id);
+    getAllUsers();
+  };
   useEffect(() => {
     getAllUsers();
   }, []);
@@ -70,7 +74,11 @@ const AllUsers = () => {
               >
                 Edit
               </Button>
-              <Button variant="contained" color="secondary">
+              <Button
+                variant="contained"
+                color="secondary"
+                onClick={() => deleteUserData(user.id)}
+              >
                 Delete
               </Button>
             </TableCell>
