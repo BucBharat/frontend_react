@@ -4,6 +4,10 @@ export const getUsers = async () => {
   return await axios.get(url);
 };
 
+export const addUser = async user => {
+  return await axios.post(url, user);
+};
+
 // const headers = {
 //   'Access-Control-Allow-Origin': '*',
 //   'Access-Control-Allow-Methods': 'OPTIONS, POST, GET',
