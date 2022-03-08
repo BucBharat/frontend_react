@@ -50,26 +50,26 @@ const AllUsers = () => {
         <TableRow className={classes.thead}>
           <TableCell>Id</TableCell>
           <TableCell>Name</TableCell>
-          <TableCell>Username</TableCell>
-          <TableCell>Email</TableCell>
-          <TableCell>Phone</TableCell>
+          {/* <TableCell>Username</TableCell> */}
+          {/* <TableCell>Email</TableCell> */}
+          <TableCell>Price</TableCell>
           <TableCell></TableCell>
         </TableRow>
       </TableHead>
       <TableBody>
         {users.map(user => (
           <TableRow className={classes.row}>
-            <TableCell>{user.id}</TableCell>
+            <TableCell>{user._id}</TableCell>
             <TableCell>{user.name}</TableCell>
-            <TableCell>{user.username}</TableCell>
-            <TableCell>{user.email}</TableCell>
-            <TableCell>{user.phone}</TableCell>
+            {/* <TableCell>{user.username}</TableCell> */}
+            <TableCell>{user.price}</TableCell>
+            {/* <TableCell>{user.phone}</TableCell> */}
             <TableCell>
               <Button
                 variant="contained"
                 color="primary"
                 style={{ marginRight: 10 }}
-                to={`/edit/${user.id}`}
+                to={`/edit/${user._id}`}
                 component={Link}
               >
                 Edit
@@ -77,7 +77,7 @@ const AllUsers = () => {
               <Button
                 variant="contained"
                 color="secondary"
-                onClick={() => deleteUserData(user.id)}
+                onClick={() => deleteUserData(user._id)}
               >
                 Delete
               </Button>
