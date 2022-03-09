@@ -36,14 +36,15 @@ const AllUsers = () => {
     await deleteUser(id);
     getAllUsers();
   };
-  useEffect(() => {
-    getAllUsers();
-  }, []);
+
   const getAllUsers = async () => {
     const response = await getUsers();
     console.log(response.data);
     setUsers(response.data);
   };
+  useEffect(() => {
+    getAllUsers();
+  }, []);
   return (
     <Table className={classes.table}>
       <TableHead>
