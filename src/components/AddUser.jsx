@@ -45,23 +45,11 @@ const AddUser = () => {
 
   return (
     <FormGroup className={classes.container}>
-      <Typography variant="h4">Add User</Typography>
+      <Typography variant="h4">Add Item</Typography>
       <FormControl>
         <InputLabel>Name</InputLabel>
         <Input onChange={e => onValueChange(e)} name="name" value={name} />
       </FormControl>
-      {/* <FormControl>
-        <InputLabel>Username</InputLabel>
-        <Input
-          onChange={e => onValueChange(e)}
-          name="username"
-          value={username}
-        />
-      </FormControl>
-      <FormControl>
-        <InputLabel>Email</InputLabel>
-        <Input onChange={e => onValueChange(e)} name="email" value={email} />
-      </FormControl> */}
       <FormControl>
         <InputLabel>Price</InputLabel>
         <Input onChange={e => onValueChange(e)} name="price" value={price} />

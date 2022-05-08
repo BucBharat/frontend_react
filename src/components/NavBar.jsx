@@ -17,10 +17,10 @@ const NavBar = () => {
     <AppBar className={classes.header} position="static">
       <Toolbar>
         <NavLink className={classes.tabs} to="./" exact>
-          All Users
+          All Items
         </NavLink>
         <NavLink className={classes.tabs} to="add" exact>
-          Add Users
+          Add Item
         </NavLink>
       </Toolbar>
     </AppBar>
