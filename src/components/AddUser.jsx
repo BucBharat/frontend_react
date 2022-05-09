@@ -59,7 +59,7 @@ const AddUser = () => {
         onClick={() => addUserDetails()}
         color="primary"
       >
-        Add user
+        Add item
       </Button>
     </FormGroup>
   );
